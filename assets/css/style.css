@@ -33,6 +33,11 @@ background-position: 20% 40%;
     border: none;
 }
 
+label {
+    color: #985E6D;
+
+}
+
 #subtitle {
     color: #494e6b !important;
     margin-top: -10px !important;
@@ -77,5 +82,5 @@ table.table> thead > tr > th{
   }
 
 td {
-    color: #985E6D
+    color: #985E6D;
 }
