@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choo Choo Train Times!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <div class="header">
+                <h2 id="title"> sometimes you’re the train,
+        <h3 id="subtitle">sometimes you’re the track </h3>
+                </h2>
+            </div>
+        </div>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-calendar"></div>
+                <strong> Current Train Schedule </strong>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="column">Train Name</th>
+                        <th scope="col" class="column">Destination</th>
+                        <th scope="col" class="column">Frequency (min)</th>
+                        <th scope="col" class="column">Next Arrival</th>
+                        <th scope="col" class="column">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="theTrainName"> The Polar Express </td>
+                        <td id="theDestination"> Santa's House? </td>
+                        <td id="theFrequency"> 5 </td>
+                        <td id="theNextArrival"> 05:15 </td>
+                        <td id="thisManyMinutesAway"> 10 </td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-pencil"></div>
+                <strong> Add Train </strong>
+            </div>
+            <form>
+
+                <div class="panel panel-body">
+                    <div class="form-group">
+                        <div class="glyphicon glyphicon-pencil"></div>
+                        <label for="trainName">Train Name</label>
+                        <input type="text" class="form-control" id="trainName">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="glyphicon glyphicon-briefcase"></div>
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="glyphicon glyphicon-time"></div>
+                        <label for="firstTime">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="firstTime">
+                    </div>
+                    <div class="form-group">
+                        <div class="glyphicon glyphicon-repeat"></div>
+
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+
+                    <button type="button" class="btn btn-default" id="submit">
+                        Submit
+                    </button>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
